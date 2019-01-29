@@ -1,6 +1,10 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    ext {
+        vRetrofit = '2.5.0'
+        vRoom = '1.1.1'
+    }
     repositories {
         google()
         jcenter()
