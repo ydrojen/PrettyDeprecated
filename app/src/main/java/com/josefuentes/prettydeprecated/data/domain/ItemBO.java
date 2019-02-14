@@ -1,5 +1,7 @@
 package com.josefuentes.prettydeprecated.data.domain;
 
+import java.util.Objects;
+
 public class ItemBO {
   String name;
   String farm_name;
@@ -27,5 +29,20 @@ public class ItemBO {
 
   public void setCategory(String category) {
     this.category = category;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    ItemBO itemBO = (ItemBO) o;
+    return Objects.equals(name, itemBO.name) &&
+        Objects.equals(farm_name, itemBO.farm_name) &&
+        Objects.equals(category, itemBO.category);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(name, farm_name, category);
   }
 }

@@ -5,6 +5,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import com.josefuentes.prettydeprecated.data.domain.ItemBO;
 import com.josefuentes.prettydeprecated.util.Mapper;
+import java.util.Objects;
 
 @Entity(tableName = "items")
 public class ItemDBO implements Mapper<ItemBO> {
@@ -46,5 +47,20 @@ public class ItemDBO implements Mapper<ItemBO> {
     to.setFarm_name(farm_name);
     to.setName(item);
     return to;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    ItemDBO itemDBO = (ItemDBO) o;
+    return Objects.equals(item, itemDBO.item) &&
+        Objects.equals(farm_name, itemDBO.farm_name) &&
+        Objects.equals(category, itemDBO.category);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(item, farm_name, category);
   }
 }
