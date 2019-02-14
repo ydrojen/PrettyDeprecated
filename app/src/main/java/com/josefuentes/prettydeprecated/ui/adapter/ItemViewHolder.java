@@ -9,9 +9,11 @@ import com.josefuentes.prettydeprecated.R;
 public class ItemViewHolder extends RecyclerView.ViewHolder {
 
   TextView name;
+  TextView category;
 
   public ItemViewHolder(@NonNull View itemView) {
     super(itemView);
     name = itemView.findViewById(R.id.main_list__label__name);
+    category = itemView.findViewById(R.id.main_list__label__category);
   }
 }

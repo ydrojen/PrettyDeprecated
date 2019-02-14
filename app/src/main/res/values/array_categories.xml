@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="category">
+    <item>ALL</item>
+    <item>Farm Products</item>
+    <item>Fruit</item>
+    <item>Herbs</item>
+    <item>Pick Your Own</item>
+    <item>Seasonal Items</item>
+    <item>Specialty Products</item>
+    <item>Vegetables</item>
+    <item>Other</item>
+  </string-array>
+</resources>

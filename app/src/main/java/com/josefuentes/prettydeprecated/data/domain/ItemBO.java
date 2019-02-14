@@ -1,16 +1,16 @@
 package com.josefuentes.prettydeprecated.data.domain;
 
 public class ItemBO {
-  String item;
+  String name;
   String farm_name;
   String category;
 
-  public String getItem() {
-    return item;
+  public String getName() {
+    return name;
   }
 
-  public void setItem(String item) {
-    this.item = item;
+  public void setName(String name) {
+    this.name = name;
   }
 
   public String getFarm_name() {

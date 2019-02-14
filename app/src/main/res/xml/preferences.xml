@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <ListPreference
+    android:dialogTitle="Select Category"
+    android:entries="@array/category"
+    android:entryValues="@array/category"
+    android:key="settings_category"
+    android:summary="Select a category to filter name list"
+    android:title="Enable category filter" />
+</PreferenceScreen>

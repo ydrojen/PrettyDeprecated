@@ -44,7 +44,7 @@ public class ItemDBO implements Mapper<ItemBO> {
     ItemBO to = new ItemBO();
     to.setCategory(category);
     to.setFarm_name(farm_name);
-    to.setItem(item);
+    to.setName(item);
     return to;
   }
 }
